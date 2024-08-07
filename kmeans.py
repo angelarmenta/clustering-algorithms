@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
 # Cargar dataset
-file_path = '/Users/angelarmenta/Dropbox/educar-ia/04-Clustering/Dataset/ds_limones_naranjas.csv'
+file_path = 'RUTA DEL DATASET'
 data_limones = pd.read_csv(file_path)
 
 # Visualizar dataset
@@ -46,4 +46,4 @@ print('El nuevo dato pertenece al cluster:', nuevo_grupo[0])
 data_limones['cluster'] = labels
 
 # Guardar el nuevo dataset (incluye etiquetas) en un nuevo archivo CSV
-data_limones.to_csv('/Users/angelarmenta/Dropbox/educar-ia/04-Clustering/Dataset/ds_limones_naranjas_clusters.csv', index=False)
+data_limones.to_csv('RUTA DEL NUEVO ARCHIVO', index=False)
